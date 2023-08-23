@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2023 by anonymous (http://jsbin.com/kisubopaco/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+#background{
+  width:100vw;
+  height:100vh;
+  background:url("https://images.unsplash.com/photo-1692401134669-4622e26ebede?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80");
+  background-repeat:no-repeat;
+  background-size:cover;
+
+}
+#head{
+  color:red;
+  text-align:center;
+  padding:30px;
+  padding-bottom:10px;
+  
+}
+#thought{
+  
+  background-color:pink;
+  border-radius:10px;
+  height:10vh;
+  width:40vw;
+  text-align:center;
+  padding:10px;
+  margin-left:400px;
+  display:flex;
+  justify-content:center;
+}
+  button{
+    background-color:orange;
+  padding:10px;
+    margin:10px;
+    margin-left:650px;
+    border-radius:50px;
+    width:80px
+ }
+
+button:hover{
+  background-color:blue;
+  color:bisque;
+  
+}
+</style>
+</head>
+<body>
+<div id="background"> 
+  <div id="head"> <h1>Quotes</h1> 
+  </div>
+  <div id="thought"> 
+    <p id="text">Do it now sometimes later beccomes never</p>
+  </div> 
+  <button onclick="laptop()">click</button>
+  </div>
+<script id="jsbin-javascript">
+ var para=document.getElementById("text");
+console.log("para");
+
+
+var quotes=["flower stands for beauty we stands for duty",
+            "success is not a destination it is a journey",
+            "failure is the first step for success",
+            "beauty is not in face its in heart"];
+console.log("quotes");
+
+function laptop(){
+  var random=Math.floor(Math.random()*quotes.length);
+  
+    para.innerHTML=quotes[random];
+  
+  
+}
+
+
+            
+</script>
+</body>
+</html>
